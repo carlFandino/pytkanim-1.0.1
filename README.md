@@ -14,13 +14,14 @@ Note:This package is under construction and many style of animations soon!
 * a little bit of adjustments
 
 # animate Y when button is clicked
+# animate Y when button is clicked
 ```python
 import tkinter as tk
-from pytkanim import normalAnims
+from pytkanim import CustomAnimations
 
 root = tk.Tk() 
                                    #Widget Name    can be also 'up'
-Label = normalAnims.NormalAnimY(tk.Label(bg="Black"),"down") 
+Label = CustomAnimations.NormalAnimY(tk.Label(bg="Black"),"down") 
 Button = tk.Button(text="Click Me",command=Label.run)
 Button.pack()
 
@@ -32,11 +33,11 @@ root.mainloop()
 # animate X when button is clicked
 ```python
 import tkinter as tk
-from pytkanim import normalAnims
+from pytkanim import CustomAnimations
 
 root = tk.Tk()
                                   #Widget Name    can be also 'backwards'
-Label = normalAnims.NormalAnimX(tk.Label(bg="Black"),"forward") 
+Label = CustomAnimations.NormalAnimX(tk.Label(bg="Black"),"forward") 
 Button = tk.Button(text="Click Me",command=Label.run)
 Button.pack()
 
@@ -47,11 +48,11 @@ root.mainloop()
 # You can add starter X and Y positions too! by simple doing this
 ```python
 import tkinter as tk
-from pytkanim import normalAnims
+from pytkanim import CustomAnimations
 
 root = tk.Tk()
 
-Label = normalAnims.NormalAnimX(tk.Label(bg="Black"),"backwards",startAX=0.5,startAY=0.5)
+Label = CustomAnimations.NormalAnimX(tk.Label(bg="Black"),"backwards",startAX=0.5,startAY=0.5)
 Button = tk.Button(text="Click Me",command=Label.run)
 Button.pack()
 
@@ -62,11 +63,11 @@ root.mainloop()
 # and also how speed to animate is.
 ```python
 import tkinter as tk
-from pytkanim import normalAnims
+from pytkanim import CustomAnimations
 
 root = tk.Tk()
 
-Label = normalAnims.NormalAnimX(tk.Label(bg="Black"),"forward",startAX=0.5,startAY=0.5,speed=10) #Higher amount of speed the more it goes slower
+Label = CustomAnimations.NormalAnimX(tk.Label(bg="Black"),"forward",startAX=0.5,startAY=0.5,speed=10) #Higher amount of speed the more it goes slower
 Button = tk.Button(text="Click Me",command=Label.run)
 Button.pack()
 
@@ -77,11 +78,11 @@ root.mainloop()
 # Stop and Continue Animation 
 ```python
 import tkinter as tk
-from pytkanim import normalAnims
+from pytkanim import CustomAnimations
 stopped = False
 root = tk.Tk()
 
-Label = normalAnims.NormalAnimX(tk.Label(bg="Black"),"forward",startAX=0,startAY=0.5,speed=10)
+Label = CustomAnimations.NormalAnimX(tk.Label(bg="Black"),"forward",startAX=0,startAY=0.5,speed=10)
 Label.run()
 
 def continueAndStop():
@@ -104,11 +105,11 @@ root.mainloop()
 # Changing Direction
 ```python
 import tkinter as tk
-from pytkanim import normalAnims
+from pytkanim import CustomAnimations
 direction = "backwards"
 root = tk.Tk()
 
-Label = normalAnims.NormalAnimX(tk.Label(bg="Black"),"forward",startAX=0,startAY=0.5,speed=10)
+Label = CustomAnimations.NormalAnimX(tk.Label(bg="Black"),"forward",startAX=0,startAY=0.5,speed=10)
 Label.run()
 
 def changingDirection():
