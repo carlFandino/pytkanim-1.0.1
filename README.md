@@ -13,7 +13,7 @@ Note:This package is under construction and many style of animations soon!
 * added stop argument so that you know where the widget stops.
 * a little bit of adjustments
 
-# animate Y when button is clicked
+
 # animate Y when button is clicked
 ```python
 import tkinter as tk
